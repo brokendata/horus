@@ -43,22 +43,32 @@ instance FromJSON Weather where
 
     parseJSON _ = mzero
 
-        -- >>= (.: "results") >>= (.: "channel") >>= (.: "astronomy") >>= (.: "sunrise"))
 
-endPoint = "https://query.yahooapis.com/v1/public/yql?q=select%20astronomy%2C%20%20item.condition%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22dallas%2C%20tx%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys"
-
-constructQuery :: String -> String -> String
+constructQuery :: T.Text -> T.Text -> T.Text
 constructQuery city state = "select astronomy,  item.condition from weather.forecast" <>
                             " where woeid in (select woeid from geo.places(1)" <>
                             " where text=\"" <> city <> "," <> state <> "\")"
 
-runRequest :: String -> IO ByteString
-runRequest yql = do
-    r <- get yql
+buildRequest :: T.Text -> IO ByteString
+buildRequest yql = do
+    let root = "https://query.yahooapis.com/v1/public/yql"
+        datatable = "store://datatables.org/alltableswithkeys"
+        opts = defaults & param "q" .~ [yql]
+                          & param "env" .~ [datatable]
+                          & param "format" .~ ["json"]
+    r <- getWith opts root
     return $ r ^. responseBody
 
+run :: T.Text -> IO (Maybe Weather)
+run yql = buildRequest yql >>= (\r -> return $ decode r :: IO (Maybe Weather))
 
--- run :: String -> IO (Maybe Weather)
-run yql = do
-    w <- runRequest yql
-    return $ decode w :: IO (Maybe Weather)
+
+dallas :: T.Text
+dallas = constructQuery "dallas" "tx"
+
+denton :: T.Text
+denton = constructQuery "denton" "tx"
+
+-- Quick Examples
+runDenton = run denton
+runDallas = run dallas
