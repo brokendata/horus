@@ -1,23 +1,11 @@
 {
- "query": {
-  "count": 1,
-  "created": "2015-09-02T00:31:47Z",
-  "lang": "en-US",
-  "results": {
-   "channel": {
-    "astronomy": {
-     "sunrise": "6:59 am",
-     "sunset": "7:51 pm"
-    },
-    "item": {
-     "condition": {
-      "code": "30",
-      "date": "Tue, 01 Sep 2015 6:51 pm CDT",
-      "temp": "91",
-      "text": "Partly Cloudy"
-     }
-    }
-   }
-  }
- }
+    "ip": "68.191.220.221",
+    "hostname": "68-191-220-221.static.dntn.tx.charter.com",
+    "city": "Denton",
+    "region": "Texas",
+    "country": "US",
+    "loc": "33.1834,-97.1264",
+    "org": "AS20115 Charter Communications",
+    "postal": "76205",
+    "phone": "940"
 }
