@@ -1,0 +1,49 @@
+Registering mmorph-1.0.4...
+win64\home\nmrw48\gits\horus\.cabal-sandbox\x86_64-windows-ghc-7.10.2\mmorph-1.0.4-8dNpUU8QFPe77rrwKAb20b
+st\dist-sandbox-46a6cd3d\build\Control\Monad\Morph.o )
+
+src\Control\Monad\Morph.hs:76:1: Warning:
+    Module `Control.Monad.Trans.Error' is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+src\Control\Monad\Morph.hs:116:20: Warning:
+    In the use of type constructor or class `E.ErrorT'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src\Control\Monad\Morph.hs:117:19: Warning:
+    In the use of data constructor `E.ErrorT'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src\Control\Monad\Morph.hs:117:34: Warning:
+    In the use of `E.runErrorT'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src\Control\Monad\Morph.hs:241:11: Warning:
+    In the use of type constructor or class `E.Error'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src\Control\Monad\Morph.hs:241:33: Warning:
+    In the use of type constructor or class `E.ErrorT'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src\Control\Monad\Morph.hs:242:17: Warning:
+    In the use of data constructor `E.ErrorT'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src\Control\Monad\Morph.hs:243:14: Warning:
+    In the use of `E.runErrorT'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src\Control\Monad\Morph.hs:243:30: Warning:
+    In the use of `E.runErrorT'
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[2 of 2] Compiling Control.Monad.Trans.Compose ( src\Control\Monad\Trans\Compose.hs, dist\dist-sandbox-46a6cd3d\build\Control\Monad\Trans\Compose.o )
+In-place registering mmorph-1.0.4...

@@ -1,0 +1,13 @@
+Registering x509-validation-1.6.0...
+e\nmrw48\gits\horus\.cabal-sandbox\x86_64-windows-ghc-7.10.2\x509-validation-1.6.0-E0EyGxEiqTT7bwftofaaQr
+9\Validation\Fingerprint.hs, dist\dist-sandbox-46a6cd3d\build\Data\X509\Validation\Fingerprint.o )
+[2 of 5] Compiling Data.X509.Validation.Signature ( Data\X509\Validation\Signature.hs, dist\dist-sandbox-46a6cd3d\build\Data\X509\Validation\Signature.o )
+[3 of 5] Compiling Data.X509.Validation.Types ( Data\X509\Validation\Types.hs, dist\dist-sandbox-46a6cd3d\build\Data\X509\Validation\Types.o )
+[4 of 5] Compiling Data.X509.Validation.Cache ( Data\X509\Validation\Cache.hs, dist\dist-sandbox-46a6cd3d\build\Data\X509\Validation\Cache.o )
+[5 of 5] Compiling Data.X509.Validation ( Data\X509\Validation.hs, dist\dist-sandbox-46a6cd3d\build\Data\X509\Validation.o )
+
+Data\X509\Validation.hs:32:1: Warning:
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+In-place registering x509-validation-1.6.0...

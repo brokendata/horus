@@ -1,0 +1,14 @@
+Registering transformers-base-0.4.4...
+nmrw48\gits\horus\.cabal-sandbox\x86_64-windows-ghc-7.10.2\transformers-base-0.4.4-88TAFm21vtn2NrYUppy50c
+se.hs, dist\dist-sandbox-46a6cd3d\build\Control\Monad\Base.o )
+
+src\Control\Monad\Base.hs:22:1: Warning:
+    The import of `Data.Monoid' is redundant
+      except perhaps to import instances from `Data.Monoid'
+    To import instances alone, use: import Data.Monoid()
+
+src\Control\Monad\Base.hs:24:1: Warning:
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+In-place registering transformers-base-0.4.4...

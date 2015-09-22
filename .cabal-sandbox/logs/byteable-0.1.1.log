@@ -1,0 +1,9 @@
+Registering byteable-0.1.1...
+n64\home\nmrw48\gits\horus\.cabal-sandbox\x86_64-windows-ghc-7.10.2\byteable-0.1.1-F2pcQljAfpbDG2panTEyo8
+dbox-46a6cd3d\build\Data\Byteable.o )
+
+Data\Byteable.hs:48:11: Warning:
+    Rule "constEqBytes/ByteString" may never fire
+      because `constEqBytes' might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on `constEqBytes'
+In-place registering byteable-0.1.1...

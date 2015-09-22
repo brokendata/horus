@@ -1,0 +1,22 @@
+Registering streaming-commons-0.1.12.1...
+w48\gits\horus\.cabal-sandbox\x86_64-windows-ghc-7.10.2\streaming-commons-0.1.12.1-BwH5RbAhYX199Flz2bBPlS
+Streaming\Zlib\Lowlevel.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Zlib\Lowlevel.o )
+[ 2 of 19] Compiling Data.Streaming.Zlib ( Data\Streaming\Zlib.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Zlib.o )
+[ 3 of 19] Compiling Data.Text.Internal.Unsafe.Shift ( Data\Text\Internal\Unsafe\Shift.hs, dist\dist-sandbox-46a6cd3d\build\Data\Text\Internal\Unsafe\Shift.o )
+[ 4 of 19] Compiling Data.Text.Internal.Unsafe.Char ( Data\Text\Internal\Unsafe\Char.hs, dist\dist-sandbox-46a6cd3d\build\Data\Text\Internal\Unsafe\Char.o )
+[ 5 of 19] Compiling Data.Text.Internal.Encoding.Utf8 ( Data\Text\Internal\Encoding\Utf8.hs, dist\dist-sandbox-46a6cd3d\build\Data\Text\Internal\Encoding\Utf8.o )
+[ 6 of 19] Compiling Data.Text.Internal.Encoding.Utf32 ( Data\Text\Internal\Encoding\Utf32.hs, dist\dist-sandbox-46a6cd3d\build\Data\Text\Internal\Encoding\Utf32.o )
+[ 7 of 19] Compiling Data.Text.Internal.Encoding.Utf16 ( Data\Text\Internal\Encoding\Utf16.hs, dist\dist-sandbox-46a6cd3d\build\Data\Text\Internal\Encoding\Utf16.o )
+[ 8 of 19] Compiling Data.Streaming.Text ( Data\Streaming\Text.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Text.o )
+[ 9 of 19] Compiling Data.Streaming.Process.Internal ( Data\Streaming\Process\Internal.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Process\Internal.o )
+[10 of 19] Compiling Data.Streaming.Process ( Data\Streaming\Process.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Process.o )
+[11 of 19] Compiling Data.Streaming.Network.Internal ( Data\Streaming\Network\Internal.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Network\Internal.o )
+[12 of 19] Compiling Data.Streaming.Network ( Data\Streaming\Network.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Network.o )
+[13 of 19] Compiling Data.Streaming.Filesystem ( Data\Streaming\Filesystem.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Filesystem.o )
+[14 of 19] Compiling System.Win32File ( dist\dist-sandbox-46a6cd3d\build\System\Win32File.hs, dist\dist-sandbox-46a6cd3d\build\System\Win32File.o )
+[15 of 19] Compiling Data.Streaming.FileRead ( Data\Streaming\FileRead.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\FileRead.o )
+[16 of 19] Compiling Data.Streaming.ByteString.Builder.Buffer ( Data\Streaming\ByteString\Builder\Buffer.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\ByteString\Builder\Buffer.o )
+[17 of 19] Compiling Data.Streaming.ByteString.Builder ( Data\Streaming\ByteString\Builder.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\ByteString\Builder.o )
+[18 of 19] Compiling Data.Streaming.ByteString.Builder.Class ( Data\Streaming\ByteString\Builder\Class.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\ByteString\Builder\Class.o )
+[19 of 19] Compiling Data.Streaming.Blaze ( Data\Streaming\Blaze.hs, dist\dist-sandbox-46a6cd3d\build\Data\Streaming\Blaze.o )
+In-place registering streaming-commons-0.1.12.1...

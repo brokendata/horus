@@ -1,0 +1,8 @@
+Registering asn1-types-0.3.0...
+4\home\nmrw48\gits\horus\.cabal-sandbox\x86_64-windows-ghc-7.10.2\asn1-types-0.3.0-IGEY7tUbmr7FV0rXRMuOc7
+hs, dist\dist-sandbox-46a6cd3d\build\Data\ASN1\Types\String.o )
+[2 of 5] Compiling Data.ASN1.Types.Lowlevel ( Data\ASN1\Types\Lowlevel.hs, dist\dist-sandbox-46a6cd3d\build\Data\ASN1\Types\Lowlevel.o )
+[3 of 5] Compiling Data.ASN1.OID    ( Data\ASN1\OID.hs, dist\dist-sandbox-46a6cd3d\build\Data\ASN1\OID.o )
+[4 of 5] Compiling Data.ASN1.BitArray ( Data\ASN1\BitArray.hs, dist\dist-sandbox-46a6cd3d\build\Data\ASN1\BitArray.o )
+[5 of 5] Compiling Data.ASN1.Types  ( Data\ASN1\Types.hs, dist\dist-sandbox-46a6cd3d\build\Data\ASN1\Types.o )
+In-place registering asn1-types-0.3.0...

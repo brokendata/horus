@@ -91,10 +91,8 @@ denton = constructQuery "Denton" "Texas"
 runDenton = run denton
 runDallas = run dallas
 
-runMyLocation:: IO (Maybe Weather)
+runMyLocation :: IO (Maybe Weather)
 runMyLocation = do
-    r <- getLocation
-    case r of
-        Just ip -> build ip
-        _ ->  return Nothing
-    where build = (run . (uncurry constructQuery) . (city &&& region))
+    loc <- getLocation
+    maybe (return Nothing) getWeather loc
+    where getWeather = (run . (uncurry constructQuery) . (city &&& region))

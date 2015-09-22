@@ -1,0 +1,51 @@
+Registering memory-0.8...
+ygwin64\home\nmrw48\gits\horus\.cabal-sandbox\x86_64-windows-ghc-7.10.2\memory-0.8-HPsTV4626k4C5RYnPn9zAn
+ows.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\MemMap\Windows.o )
+[ 2 of 28] Compiling Data.Memory.Internal.DeepSeq ( Data\Memory\Internal\DeepSeq.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Internal\DeepSeq.o )
+[ 3 of 28] Compiling Data.Memory.Internal.CompatPrim64 ( Data\Memory\Internal\CompatPrim64.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Internal\CompatPrim64.o )
+[ 4 of 28] Compiling Data.Memory.Internal.CompatPrim ( Data\Memory\Internal\CompatPrim.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Internal\CompatPrim.o )
+[ 5 of 28] Compiling Data.Memory.Internal.Scrubber ( Data\Memory\Internal\Scrubber.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Internal\Scrubber.o )
+[ 6 of 28] Compiling Data.Memory.ExtendedWords ( Data\Memory\ExtendedWords.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\ExtendedWords.o )
+[ 7 of 28] Compiling Data.Memory.Internal.Imports ( Data\Memory\Internal\Imports.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Internal\Imports.o )
+[ 8 of 28] Compiling Data.Memory.PtrMethods ( Data\Memory\PtrMethods.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\PtrMethods.o )
+[ 9 of 28] Compiling Data.Memory.Internal.Compat ( Data\Memory\Internal\Compat.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Internal\Compat.o )
+[10 of 28] Compiling Data.Memory.Encoding.Base16 ( Data\Memory\Encoding\Base16.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Encoding\Base16.o )
+[11 of 28] Compiling Data.Memory.Encoding.Base32 ( Data\Memory\Encoding\Base32.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Encoding\Base32.o )
+[12 of 28] Compiling Data.Memory.Encoding.Base64 ( Data\Memory\Encoding\Base64.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Encoding\Base64.o )
+[13 of 28] Compiling Data.Memory.Endian ( Data\Memory\Endian.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Endian.o )
+[14 of 28] Compiling Data.Memory.Hash.SipHash ( Data\Memory\Hash\SipHash.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Hash\SipHash.o )
+[15 of 28] Compiling Data.Memory.Hash.FNV ( Data\Memory\Hash\FNV.hs, dist\dist-sandbox-46a6cd3d\build\Data\Memory\Hash\FNV.o )
+[16 of 28] Compiling Data.ByteArray.Types ( Data\ByteArray\Types.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Types.o )
+
+Data\ByteArray\Types.hs:15:1: Warning:
+    The import of `Data.Monoid' is redundant
+      except perhaps to import instances from `Data.Monoid'
+    To import instances alone, use: import Data.Monoid()
+[17 of 28] Compiling Data.ByteArray.Bytes ( Data\ByteArray\Bytes.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Bytes.o )
+
+Data\ByteArray\Bytes.hs:20:1: Warning:
+    The import of `Data.Monoid' is redundant
+      except perhaps to import instances from `Data.Monoid'
+    To import instances alone, use: import Data.Monoid()
+[18 of 28] Compiling Data.ByteArray.ScrubbedBytes ( Data\ByteArray\ScrubbedBytes.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\ScrubbedBytes.o )
+
+Data\ByteArray\ScrubbedBytes.hs:19:1: Warning:
+    The import of `Data.Monoid' is redundant
+      except perhaps to import instances from `Data.Monoid'
+    To import instances alone, use: import Data.Monoid()
+[19 of 28] Compiling Data.ByteArray.MemView ( Data\ByteArray\MemView.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\MemView.o )
+[20 of 28] Compiling Data.ByteArray.Pack.Internal ( Data\ByteArray\Pack\Internal.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Pack\Internal.o )
+
+Data\ByteArray\Pack\Internal.hs:20:1: Warning:
+    The import of `Data.Memory.Internal.Imports' is redundant
+      except perhaps to import instances from `Data.Memory.Internal.Imports'
+    To import instances alone, use: import Data.Memory.Internal.Imports()
+[21 of 28] Compiling Data.ByteArray.Methods ( Data\ByteArray\Methods.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Methods.o )
+[22 of 28] Compiling Data.ByteArray.View ( Data\ByteArray\View.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\View.o )
+[23 of 28] Compiling Data.ByteArray.Encoding ( Data\ByteArray\Encoding.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Encoding.o )
+[24 of 28] Compiling Data.ByteArray.Mapping ( Data\ByteArray\Mapping.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Mapping.o )
+[25 of 28] Compiling Data.ByteArray.Parse ( Data\ByteArray\Parse.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Parse.o )
+[26 of 28] Compiling Data.ByteArray.Hash ( Data\ByteArray\Hash.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Hash.o )
+[27 of 28] Compiling Data.ByteArray   ( Data\ByteArray.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray.o )
+[28 of 28] Compiling Data.ByteArray.Pack ( Data\ByteArray\Pack.hs, dist\dist-sandbox-46a6cd3d\build\Data\ByteArray\Pack.o )
+In-place registering memory-0.8...
