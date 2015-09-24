@@ -397,3 +397,396 @@ dependencies: x509-store-1.6.0 x509-1.6.0 process-1.2.3.0 pem-0.2.2
 install-outcome: InstallOk
 docs-outcome: NotTried
 tests-outcome: NotTried
+
+package: adjunctions-4.2.2
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: void-0.7.1 transformers-0.4.2.0 tagged-0.8.1
+              semigroups-0.17.0.1 semigroupoids-5.0.0.4 profunctors-5.1.1
+              mtl-2.2.1 free-4.12.1 distributive-0.4.4 contravariant-1.3.3
+              containers-0.5.6.2 comonad-4.2.7.2 base-4.8.1.0 array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: aeson-0.10.0.0
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: -old-locale -developer
+dependencies: vector-0.11.0.0 unordered-containers-0.2.5.1
+              transformers-0.4.2.0 time-1.5.0.1 text-1.2.1.3
+              template-haskell-2.10.0.0 syb-0.5.1 scientific-0.3.3.8 mtl-2.2.1
+              hashable-1.2.3.3 ghc-prim-0.4.0.0 dlist-0.7.1.2 deepseq-1.4.1.1
+              containers-0.5.6.2 bytestring-0.10.6.0 base-4.8.1.0
+              attoparsec-0.13.0.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: base-orphans-0.4.4
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: ghc-prim-0.4.0.0 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: base16-bytestring-0.1.1.6
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: ghc-prim-0.4.0.0 bytestring-0.10.6.0 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: bifunctors-5
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: tagged semigroups
+dependencies: tagged-0.8.1 semigroups-0.17.0.1 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: comonad-4.2.7.2
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: test-doctests distributive contravariant containers
+dependencies: transformers-compat-0.4.0.4 transformers-0.4.2.0
+              tagged-0.8.1 semigroups-0.17.0.1 distributive-0.4.4
+              contravariant-1.3.3 containers-0.5.6.2 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: connection-0.2.5
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: x509-validation-1.6.0 x509-system-1.6.1
+              x509-store-1.6.0 x509-1.6.0 tls-1.3.2 socks-0.5.4 network-2.6.2.1
+              data-default-class-0.0.1 containers-0.5.6.2 bytestring-0.10.6.0
+              byteable-0.1.1 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: contravariant-1.3.3
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: tagged statevar semigroups
+dependencies: void-0.7.1 transformers-compat-0.4.0.4
+              transformers-0.4.2.0 semigroups-0.17.0.1 base-4.8.1.0
+              StateVar-1.1.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cookie-0.4.1.6
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: time-1.5.0.1 text-1.2.1.3 old-locale-1.0.0.7
+              deepseq-1.4.1.1 data-default-class-0.0.1 bytestring-0.10.6.0
+              blaze-builder-0.4.0.1 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cryptohash-0.11.6
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: ghc-prim-0.4.0.0 bytestring-0.10.6.0 byteable-0.1.1
+              base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: distributive-0.4.4
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: -lib-werror
+dependencies: transformers-compat-0.4.0.4 transformers-0.4.2.0
+              tagged-0.8.1 ghc-prim-0.4.0.0 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: free-4.12.1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 template-haskell-2.10.0.0
+              semigroups-0.17.0.1 semigroupoids-5.0.0.4 profunctors-5.1.1
+              prelude-extras-0.4.0.2 mtl-2.2.1 exceptions-0.8.0.2
+              distributive-0.4.4 comonad-4.2.7.2 bifunctors-5 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: http-client-0.4.23
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: network-uri
+dependencies: transformers-0.4.2.0 time-1.5.0.1 text-1.2.1.3
+              streaming-commons-0.1.12.1 random-1.1 network-uri-2.6.0.3
+              network-2.6.2.1 mime-types-0.1.0.6 http-types-0.8.6
+              ghc-prim-0.4.0.0 filepath-1.4.0.0 exceptions-0.8.0.2
+              deepseq-1.4.1.1 data-default-class-0.0.1 cookie-0.4.1.6
+              containers-0.5.6.2 case-insensitive-1.2.0.4 bytestring-0.10.6.0
+              blaze-builder-0.4.0.1 base64-bytestring-1.0.0.1 base-4.8.1.0
+              array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: http-client-tls-0.2.2
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: tls-1.3.2 network-2.6.2.1 http-client-0.4.23
+              data-default-class-0.0.1 connection-0.2.5 bytestring-0.10.6.0
+              base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: http-types-0.8.6
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: text-1.2.1.3 case-insensitive-1.2.0.4
+              bytestring-0.10.6.0 blaze-builder-0.4.0.1 base-4.8.1.0
+              array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: kan-extensions-4.2.3
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 tagged-0.8.1
+              semigroupoids-5.0.0.4 mtl-2.2.1 free-4.12.1 distributive-0.4.4
+              contravariant-1.3.3 containers-0.5.6.2 comonad-4.2.7.2 base-4.8.1.0
+              array-0.5.1.0 adjunctions-4.2.2
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: lens-4.13
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: trustworthy test-templates test-properties test-hunit
+       test-hlint test-doctests -safe -old-inline-pragmas -j inlining
+       -dump-splices -benchmark-uniplate
+dependencies: void-0.7.1 vector-0.11.0.0
+              unordered-containers-0.2.5.1 transformers-compat-0.4.0.4
+              transformers-0.4.2.0 text-1.2.1.3 template-haskell-2.10.0.0
+              tagged-0.8.1 semigroups-0.17.0.1 semigroupoids-5.0.0.4
+              reflection-2.1 profunctors-5.1.1 parallel-3.2.0.6 mtl-2.2.1
+              kan-extensions-4.2.3 hashable-1.2.3.3 ghc-prim-0.4.0.0 free-4.12.1
+              filepath-1.4.0.0 exceptions-0.8.0.2 distributive-0.4.4
+              contravariant-1.3.3 containers-0.5.6.2 comonad-4.2.7.2
+              bytestring-0.10.6.0 bifunctors-5 base-orphans-0.4.4 base-4.8.1.0
+              array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: lens-aeson-1.0.0.5
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: test-doctests
+dependencies: vector-0.11.0.0 unordered-containers-0.2.5.1
+              text-1.2.1.3 scientific-0.3.3.8 lens-4.13 bytestring-0.10.6.0
+              base-4.8.1.0 attoparsec-0.13.0.1 aeson-0.10.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: mime-types-0.1.0.6
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: text-1.2.1.3 containers-0.5.6.2 bytestring-0.10.6.0
+              base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: nats-1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: hashable
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: prelude-extras-0.4.0.2
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: profunctors-5.1.1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 tagged-0.8.1 distributive-0.4.4
+              comonad-4.2.7.2 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: psqueues-0.2.0.2
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: hashable-1.2.3.3 ghc-prim-0.4.0.0 deepseq-1.4.1.1
+              base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: reflection-2.1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: template-haskell -slow
+dependencies: template-haskell-2.10.0.0 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: semigroupoids-5.0.0.4
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: tagged doctests distributive contravariant containers
+       comonad
+dependencies: transformers-compat-0.4.0.4 transformers-0.4.2.0
+              tagged-0.8.1 semigroups-0.17.0.1 distributive-0.4.4
+              contravariant-1.3.3 containers-0.5.6.2 comonad-4.2.7.2 bifunctors-5
+              base-orphans-0.4.4 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: semigroups-0.17.0.1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: unordered-containers text tagged hashable deepseq containers
+       bytestring
+dependencies: unordered-containers-0.2.5.1 text-1.2.1.3
+              tagged-0.8.1 nats-1 hashable-1.2.3.3 deepseq-1.4.1.1
+              containers-0.5.6.2 bytestring-0.10.6.0 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: socks-0.5.4
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: network-2.6.2.1 cereal-0.4.1.1 bytestring-0.10.6.0
+              base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: tagged-0.8.1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: template-haskell-2.10.0.0 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: void-0.7.1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: -safe
+dependencies: semigroups-0.17.0.1 hashable-1.2.3.3 ghc-prim-0.4.0.0
+              deepseq-1.4.1.1 base-4.8.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: wreq-0.4.0.0
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+flags: -httpbin doctest -developer -aws
+dependencies: unordered-containers-0.2.5.1 time-1.5.0.1
+              text-1.2.1.3 template-haskell-2.10.0.0 psqueues-0.2.0.2
+              old-locale-1.0.0.7 mime-types-0.1.0.6 lens-aeson-1.0.0.5 lens-4.13
+              http-types-0.8.6 http-client-tls-0.2.2 http-client-0.4.23
+              hashable-1.2.3.3 ghc-prim-0.4.0.0 exceptions-0.8.0.2
+              cryptohash-0.11.6 containers-0.5.6.2 case-insensitive-1.2.0.4
+              bytestring-0.10.6.0 byteable-0.1.1 base16-bytestring-0.1.1.6
+              base-4.8.1.0 attoparsec-0.13.0.1 aeson-0.10.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: x509-system-1.6.1
+os: windows
+arch: x86_64
+compiler: ghc-7.10.2
+client: cabal-install-1.22.6.0
+dependencies: x509-store-1.6.0 x509-1.6.0 process-1.2.3.0 pem-0.2.2
+              mtl-2.2.1 filepath-1.4.0.0 directory-1.2.2.0 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.1.0 asn1-encoding-0.9.0 Win32-2.3.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried

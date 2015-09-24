@@ -18,20 +18,20 @@ catchIO = Exception.catch
 version :: Version
 version = Version [0,1,0,0] []
 prefix, bindirrel :: FilePath
-prefix        = "C:\\Users\\nmrw48\\AppData\\Roaming\\cabal"
+prefix        = "C:\\cygwin64\\home\\nmrw48\\gits\\horus\\.cabal-sandbox"
 bindirrel     = "bin"
 
 getBinDir :: IO FilePath
 getBinDir = getPrefixDirRel bindirrel
 
 getLibDir :: IO FilePath
-getLibDir = getPrefixDirRel "x86_64-windows-ghc-7.10.2\\horus-0.1.0.0-JNi5645Acw9LXHJkwGByB9"
+getLibDir = getPrefixDirRel "x86_64-windows-ghc-7.10.2\\horus-0.1.0.0-JaqAX4Trliy25OKfqdoM6d"
 
 getDataDir :: IO FilePath
 getDataDir =  catchIO (getEnv "horus_datadir") (\_ -> getPrefixDirRel "x86_64-windows-ghc-7.10.2\\horus-0.1.0.0")
 
 getLibexecDir :: IO FilePath
-getLibexecDir = getPrefixDirRel "horus-0.1.0.0-JNi5645Acw9LXHJkwGByB9"
+getLibexecDir = getPrefixDirRel "horus-0.1.0.0-JaqAX4Trliy25OKfqdoM6d"
 
 getSysconfDir :: IO FilePath
 getSysconfDir = getPrefixDirRel "etc"

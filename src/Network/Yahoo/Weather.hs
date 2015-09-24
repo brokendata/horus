@@ -16,8 +16,9 @@ import qualified Data.Text                  as T
 import           Network.Wreq
 import GHC.Generics
 import Control.Arrow ((&&&))
-import Control.Monad
-
+import Control.Monad.Trans.Maybe
+import Control.Monad.Trans.Reader
+import Control.Monad.Trans
 
 data Weather = Weather {
     sunrise :: !T.Text
@@ -36,8 +37,6 @@ data IpResponse = IpResponse {
   , loc      :: !T.Text
   , org      :: !T.Text
   , postal   :: !T.Text
-  , phone    :: Int
-
 } deriving (Show, Generic)
 
 instance FromJSON IpResponse
@@ -55,13 +54,39 @@ instance FromJSON Weather where
 
 
     parseJSON _ = mzero
+-- Reader Config
+data Config = Config {
+    ipAPI:: String
+  , root :: String
+  , datatable :: T.Text} deriving (Show)
+
+config = Config "http://ipinfo.io/json" "https://query.yahooapis.com/v1/public/yql" "https://query.yahooapis.com/v1/public/yql"
+
+-- Monad Stack
+type MaybeIO = MaybeT IO
+type StackRM = ReaderT Config MaybeIO
+
+runRM r m = runMaybeT $ runReaderT r m
+-- lift a (Maybe a)  int the monad stack
+liftMaybe :: Maybe a -> ReaderT r MaybeIO a
+liftMaybe = liftR . liftM
+    where liftR = ReaderT . return
+          liftM = MaybeT . return
 
 -- need to convert Get exception to Nothing
-getLocation:: IO (Maybe IpResponse)
+-- getLocation :: MaybeIO IpResponse
 getLocation = do
     r <- get "http://ipinfo.io/json"
     let body = r ^. responseBody
     return (decode body :: Maybe IpResponse)
+
+getLocation2 :: StackRM IpResponse
+getLocation2 = do
+    ep <- asks ipAPI
+    r <- liftIO $ get ep
+    let body = r ^. responseBody
+    let decoded = decode body :: (Maybe IpResponse)
+    liftMaybe decoded
 
 constructQuery :: T.Text -> T.Text -> T.Text
 constructQuery city state = "select astronomy,  item.condition from weather.forecast" <>
@@ -78,8 +103,21 @@ buildRequest yql = do
     r <- getWith opts root
     return $ r ^. responseBody
 
-run :: T.Text -> IO (Maybe Weather)
-run yql = buildRequest yql >>= (\r -> return $ decode r :: IO (Maybe Weather))
+getWeather :: T.Text -> StackRM Weather
+getWeather yql = do
+    root' <- asks root
+    datatable' <- asks datatable
+    let opts = defaults & param "q" .~ [yql]
+                      & param "env" .~ [datatable']
+                      & param "format" .~ ["json"]
+    r <- liftIO $ getWith opts root'
+    let body = r ^. responseBody
+    let decoded = decode body :: (Maybe Weather)
+    liftMaybe decoded
+
+
+-- run :: T.Text -> IO (Maybe Weather)
+-- run yql = buildRequest yql >>= (\r -> return $ decode r :: IO (Maybe Weather))
 
 dallas :: T.Text
 dallas = constructQuery "dallas" "tx"
@@ -88,11 +126,17 @@ denton :: T.Text
 denton = constructQuery "Denton" "Texas"
 
 -- Quick Examples
-runDenton = run denton
-runDallas = run dallas
 
-runMyLocation :: IO (Maybe Weather)
-runMyLocation = do
-    loc <- getLocation
-    maybe (return Nothing) getWeather loc
-    where getWeather = (run . (uncurry constructQuery) . (city &&& region))
+run' c = flip runRM c
+run= run' config
+
+runCity = run . getWeather
+runDenton = runCity denton
+runDallas = runCity dallas 
+
+
+--runMyLocation :: IO (Maybe Weather)
+-- runMyLocation = do
+--    loc <- getLocation
+--     maybe (return Nothing) getWeather loc
+--    where getWeather = (run . (uncurry constructQuery) . (city &&& region))
