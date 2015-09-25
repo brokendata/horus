@@ -62,26 +62,25 @@ data Config = Config {
 
 config = Config "http://ipinfo.io/json" "https://query.yahooapis.com/v1/public/yql" "https://query.yahooapis.com/v1/public/yql"
 
--- Monad Stack
+-- Monad Stack:
+-- Create a Monad Transformer stack of Reader ( Maybe ( a ))
+-- Maybe:  Encapsulates that an api request may fail and return nothing
+-- Reader: Threads "global" readable state through the Monad
 type MaybeIO = MaybeT IO
 type StackRM = ReaderT Config MaybeIO
 
 runRM r m = runMaybeT $ runReaderT r m
 -- lift a (Maybe a)  int the monad stack
+-- like `return` but when the data is already a `Maybe a`
 liftMaybe :: Maybe a -> ReaderT r MaybeIO a
 liftMaybe = liftR . liftM
     where liftR = ReaderT . return
           liftM = MaybeT . return
 
--- need to convert Get exception to Nothing
--- getLocation :: MaybeIO IpResponse
-getLocation = do
-    r <- get "http://ipinfo.io/json"
-    let body = r ^. responseBody
-    return (decode body :: Maybe IpResponse)
 
-getLocation2 :: StackRM IpResponse
-getLocation2 = do
+-- Submit request to ip API and decode to IpResponse
+getLocation:: StackRM IpResponse
+getLocation= do
     ep <- asks ipAPI
     r <- liftIO $ get ep
     let body = r ^. responseBody
@@ -93,15 +92,6 @@ constructQuery city state = "select astronomy,  item.condition from weather.fore
                             " where woeid in (select woeid from geo.places(1)" <>
                             " where text=\"" <> city <> "," <> state <> "\")"
 
-buildRequest :: T.Text -> IO ByteString
-buildRequest yql = do
-    let root = "https://query.yahooapis.com/v1/public/yql"
-        datatable = "store://datatables.org/alltableswithkeys"
-        opts = defaults & param "q" .~ [yql]
-                          & param "env" .~ [datatable]
-                          & param "format" .~ ["json"]
-    r <- getWith opts root
-    return $ r ^. responseBody
 
 getWeather :: T.Text -> StackRM Weather
 getWeather yql = do
@@ -125,18 +115,17 @@ dallas = constructQuery "dallas" "tx"
 denton :: T.Text
 denton = constructQuery "Denton" "Texas"
 
+myLocation :: StackRM Weather
+myLocation = do
+    loc <- getLocation
+    getWeather (buildRequest loc)
+    where buildRequest = uncurry constructQuery . (city &&& region)
+
 -- Quick Examples
-
-run' c = flip runRM c
-run= run' config
-
-runCity = run . getWeather
-runDenton = runCity denton
-runDallas = runCity dallas 
-
-
---runMyLocation :: IO (Maybe Weather)
--- runMyLocation = do
---    loc <- getLocation
---     maybe (return Nothing) getWeather loc
---    where getWeather = (run . (uncurry constructQuery) . (city &&& region))
+-- flip the run transformer to get (config -> Transformer) -> inner result
+-- partially appply the function with the default config to get a function from (stackRM -> )
+-- run :: StackRM a -> IO (Maybe a)
+run = flip runRM config
+runDenton = run . getWeather $  denton
+runDallas = run . getWeather $  dallas
+runMyLocation = run myLocation
